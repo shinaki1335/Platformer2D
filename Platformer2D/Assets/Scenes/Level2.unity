@@ -217,7 +217,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97f0e1dcacbb769468c98faa1ed66658, type: 3}
+  m_Script: {fileID: 11500000, guid: 3290043e7635c7440bfc440ca4e8cd58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1591629553}
@@ -361,12 +361,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1591629553}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc738c2c49339064e96c8ff1206c0d84, type: 3}
+  m_Script: {fileID: 11500000, guid: 3fcdf97723e8a6c46a3979ad8ebcdf01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  jump: 0
-  isJumping: 0
 --- !u!50 &1591629555
 Rigidbody2D:
   serializedVersion: 4

@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody2D rb;     //place to store the rigidbody of the object
 
-
+   // public Transform startPos
 
 
     // Start is called before the first frame update

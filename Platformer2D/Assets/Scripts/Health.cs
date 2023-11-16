@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Damage : MonoBehaviour
+public class Health : MonoBehaviour
 {
-    //variable for the game
+    //variable for the gamr
     public int maxHealth;       //determines max amount of health the player can have
     public int currentHealth;   //tracks current health of the player
+
+    public GameObject hp1;
+    public GameObject hp2;
 
 
     // Start is called before the first frame update
@@ -17,28 +20,22 @@ public class Damage : MonoBehaviour
         currentHealth = maxHealth;      //set current health to max health
     }
 
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    void TakeDamage(int amount)
+    public void TakeDamage(int amount)
     {
         currentHealth -= amount;                        //lower health
+
+        if (currentHealth == 2)
+        {
+            hp2.SetActive(false);
+        }
+        if (currentHealth == 1)
+        {
+            hp1.SetActive(false);
+        }
 
         if (currentHealth <= 0)                         //if health equal zero
         {
             SceneManager.LoadScene("GameOver");         //go to GameOver Scene
-        }
-    }
-
-    void OnTriggerEnter2D(Collider2D coll)
-    {
-        if (coll.tag == "Player")
-        {
-            TakeDamage(1);
         }
     }
 }
